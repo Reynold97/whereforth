@@ -223,7 +223,7 @@ if pac_files:
             st.write(f"**Description:** {pac.pac_metadata.description}")
             
             # Download button
-            with open(filepath, "r") as f:
+            with open(filepath, "r", encoding="utf-8") as f:
                 pac_json = f.read()
             
             st.download_button(
