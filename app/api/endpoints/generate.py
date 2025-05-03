@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from app.schemas.api_schemas import PACRequest, PACResponse, ErrorResponse
 from app.services.gemini_service import GeminiService
+from app.core.pac_generator import PACGenerator
 from app.utils.helpers import save_pac_to_file
 
 router = APIRouter()
@@ -15,14 +16,14 @@ router = APIRouter()
 )
 async def generate_pac(
     request: PACRequest, 
-    gemini_service: GeminiService = Depends(lambda: GeminiService())
+    pac_generator: PACGenerator = Depends(lambda: PACGenerator(GeminiService()))
 ):
     """
     Generate a Period and Cultural Pack (PAC) for the specified culture and time period
     """
     try:
-        # Generate the PAC using the Gemini service
-        pac = gemini_service.generate_pac(
+        # Generate the PAC using the PAC generator
+        pac = pac_generator.generate_pac(
             culture=request.culture,
             time_period=request.time_period,
             detailed=request.detailed

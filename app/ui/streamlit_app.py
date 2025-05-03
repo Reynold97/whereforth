@@ -17,15 +17,16 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../.
 
 from app.schemas.simple_pac_schemas import SimplePAC
 from app.services.gemini_service import GeminiService
+from app.core.pac_generator import PACGenerator
 from app.utils.helpers import save_pac_to_file, list_available_pacs, load_pac_from_file
 from app.config import settings
 
 # Initialize the Gemini service
 @st.cache_resource
-def get_gemini_service():
-    return GeminiService()
+def get_generator():
+    return PACGenerator()
 
-gemini_service = get_gemini_service()
+pac_generator = get_generator()
 
 # Sidebar
 st.sidebar.title("Whereforth")
@@ -87,7 +88,7 @@ if submit_button and culture and time_period:
             start_time = time.time()
             
             # Call the Gemini service to generate a PAC
-            pac = gemini_service.generate_pac(
+            pac = pac_generator.generate_pac(
                 culture=culture,
                 time_period=time_period,
                 detailed=detailed
