@@ -1,6 +1,5 @@
-from typing import Dict, List, Optional, Union, Any
+from typing import Dict, List, Optional, Any
 from pydantic import BaseModel, Field
-
 
 class PACMetadata(BaseModel):
     """Metadata for a Period and Cultural Pack (PAC)"""
@@ -8,57 +7,22 @@ class PACMetadata(BaseModel):
     period: str = Field(..., description="Time period covered (e.g., '793-1066 CE')")
     regions: List[str] = Field(..., description="Geographic regions covered")
     tags: List[str] = Field(default_factory=list, description="Tags for categorization")
-    version: str = Field(default="0.1.0", description="Version of the PAC")
     description: str = Field(..., description="Brief description of the culture and period")
-    created_at: Optional[str] = Field(None, description="Creation timestamp")
-    source: Optional[str] = Field(None, description="Source of the PAC data (e.g., 'Gemini')")
-
-
-# Nested models for Visual Elements
-class ArchitectureFeature(BaseModel):
-    description: str
-    key_features: List[str]
-    materials: Optional[List[str]] = None
-    examples: Optional[List[str]] = None
-
-
-class ClothingItem(BaseModel):
-    description: str
-    items: List[str]
-    materials: Optional[List[str]] = None
-    colors: Optional[Union[List[str], str]] = None
-    accessories: Optional[List[str]] = None
-
-
-class Artifact(BaseModel):
-    description: str
-    key_features: Optional[List[str]] = None
-    significance: Optional[str] = None
-    variants: Optional[List[str]] = None
-    usage: Optional[str] = None
-
-
-class ArtStyle(BaseModel):
-    period: str
-    characteristics: List[str]
-
-
-class ColorCategory(BaseModel):
-    common: List[str]
-    rare: Optional[List[str]] = None
-
+    version: str = Field(default="0.1.0", description="Version of the PAC")
+    created_at: Optional[str] = None
+    source: Optional[str] = None
 
 class VisualElements(BaseModel):
-    """Visual elements of the culture, including architecture, clothing, artifacts, and art styles"""
-    architecture: Dict[str, Dict[str, ArchitectureFeature]] = Field(
+    """Visual elements of the culture"""
+    architecture: Dict[str, Any] = Field(
         default_factory=dict,
         description="Architecture types and their features"
     )
-    clothing: Dict[str, Dict[str, ClothingItem]] = Field(
+    clothing: Dict[str, Any] = Field(
         default_factory=dict,
         description="Clothing by gender and occasion"
     )
-    artifacts: Dict[str, Union[Dict[str, Artifact], List[str]]] = Field(
+    artifacts: Dict[str, Any] = Field(
         default_factory=dict,
         description="Important artifacts and tools"
     )
@@ -66,35 +30,10 @@ class VisualElements(BaseModel):
         default_factory=dict,
         description="Artistic styles and common motifs"
     )
-    color_palette: Dict[str, Union[List[str], Dict[str, List[str]], ColorCategory]] = Field(
+    color_palette: Dict[str, Any] = Field(
         default_factory=dict,
         description="Common colors used in the period"
     )
-
-
-# Nested models for Cultural Behaviors
-class SocialRole(BaseModel):
-    description: str
-    responsibilities: Optional[List[str]] = None
-    privileges: Optional[List[str]] = None
-    rights: Optional[List[str]] = None
-    status: Optional[str] = None
-    origins: Optional[List[str]] = None
-    possibility: Optional[str] = None
-
-
-class GenderRole(BaseModel):
-    domestic: Optional[List[str]] = None
-    special_roles: Optional[List[str]] = None
-    legal_status: Optional[str] = None
-
-
-class RitualPractice(BaseModel):
-    description: str
-    elements: List[str]
-    timing: Optional[str] = None
-    practitioners: Optional[str] = None
-
 
 class CulturalBehaviors(BaseModel):
     """Cultural behaviors, social structures, rituals, and codes of conduct"""
@@ -119,16 +58,9 @@ class CulturalBehaviors(BaseModel):
         description="Honor codes, taboos, social norms"
     )
 
-
-# Nested models for Language Cues
-class Phrase(BaseModel):
-    original: str = Field(..., description="Phrase in original language")
-    meaning: str = Field(..., description="Translation or meaning")
-
-
 class LanguageCues(BaseModel):
     """Language patterns, common phrases, naming conventions"""
-    common_phrases: Dict[str, List[Phrase]] = Field(
+    common_phrases: Dict[str, Any] = Field(
         default_factory=dict,
         description="Greetings, farewells, oaths, etc."
     )
@@ -145,26 +77,6 @@ class LanguageCues(BaseModel):
         description="Writing systems, alphabets, etc."
     )
 
-
-# Nested models for Environmental Elements
-class TerrainType(BaseModel):
-    features: List[str]
-    significance: Optional[str] = None
-    resources: Optional[List[str]] = None
-
-
-class Season(BaseModel):
-    description: str
-    conditions: List[str]
-    impact: Optional[str] = None
-    activities: Optional[str] = None
-
-
-class LightQuality(BaseModel):
-    summer: str
-    winter: str
-
-
 class EnvironmentalElements(BaseModel):
     """Geography, climate, flora/fauna, sensory environment"""
     geography: Dict[str, Any] = Field(
@@ -175,7 +87,7 @@ class EnvironmentalElements(BaseModel):
         default_factory=dict,
         description="Seasons, weather patterns"
     )
-    flora_and_fauna: Dict[str, Dict[str, List[str]]] = Field(
+    flora_and_fauna: Dict[str, Any] = Field(
         default_factory=dict,
         description="Plants and animals"
     )
@@ -183,35 +95,18 @@ class EnvironmentalElements(BaseModel):
         default_factory=dict,
         description="Natural and artificial light"
     )
-    soundscape: Dict[str, List[str]] = Field(
+    soundscape: Dict[str, Any] = Field(
         default_factory=dict,
         description="Common sounds (natural, settlement, cultural)"
     )
 
-
-class PAC(BaseModel):
-    """Complete Period and Cultural Pack (PAC) schema"""
+class SimplePAC(BaseModel):
+    """Simplified Period and Cultural Pack (PAC) schema"""
     pac_metadata: PACMetadata
     visual_elements: VisualElements = Field(default_factory=VisualElements)
     cultural_behaviors: CulturalBehaviors = Field(default_factory=CulturalBehaviors)
     language_cues: LanguageCues = Field(default_factory=LanguageCues)
     environmental_elements: EnvironmentalElements = Field(default_factory=EnvironmentalElements)
-
-    model_config = {
-        "json_schema_extra": {
-            "example": {
-                "pac_metadata": {
-                    "title": "Viking Age Scandinavia",
-                    "period": "793-1066 CE",
-                    "regions": ["Norway", "Denmark", "Sweden", "Iceland"],
-                    "tags": ["Vikings", "Norse", "Medieval", "Scandinavia"],
-                    "version": "0.1.0",
-                    "description": "A historical framework capturing the culture of Viking Age Scandinavia"
-                }
-            }
-        }
-    }
-
 
 # Template for generating PAC prompts
 PAC_TEMPLATE = {

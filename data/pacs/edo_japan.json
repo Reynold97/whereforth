@@ -1,0 +1,511 @@
+{
+  "pac_metadata": {
+    "title": "Edo Japan",
+    "period": "17th century",
+    "regions": [
+      "Honshu",
+      "Kyushu",
+      "Shikoku"
+    ],
+    "tags": [
+      "Edo Period",
+      "Tokugawa",
+      "Japan",
+      "17th Century",
+      "Samurai",
+      "Feudal Japan",
+      "Isolation"
+    ],
+    "description": "The 17th century in Japan marks the beginning of the Edo period under the Tokugawa Shogunate. It was characterized by relative peace, a rigid social hierarchy, the growth of urban centers like Edo, and the implementation of isolationist policies (Sakoku).",
+    "version": "0.1.0",
+    "created_at": "2025-05-03T14:57:19.349971",
+    "source": "Gemini"
+  },
+  "visual_elements": {
+    "architecture": {
+      "dwellings": {
+        "description": "Varies by social class. Commoner homes (minka) are typically single-story, made of wood and earth, with thatched or tiled roofs. Samurai residences range from simple houses to larger compounds, often with gardens and surrounding walls. Daimyo residences are extensive estates within castle towns or Edo.",
+        "key_features": [
+          "Wood construction",
+          "Tatami mat floors",
+          "Sliding paper doors (shoji and fusuma)",
+          "Raised wooden floors",
+          "Thatch or ceramic tile roofs",
+          "Engawa (veranda)"
+        ]
+      },
+      "public_structures": {
+        "description": "Gathering places, markets, tea houses, bath houses, local government offices (yakusho). Often simple wooden structures.",
+        "key_features": [
+          "Open-air market stalls",
+          "Wooden constructions",
+          "Often located near main roads or rivers"
+        ]
+      },
+      "religious_structures": {
+        "description": "Buddhist temples (tera) and Shinto shrines (jinja). Distinctive architectural styles with curved roofs and elaborate carvings. Temples often have large gates (sanmon) and main halls (hondo). Shrines have torii gates marking the entrance.",
+        "key_features": [
+          "Pagodas (temples)",
+          "Torii gates (shrines)",
+          "Large wooden buildings",
+          "Tiled or thatched roofs",
+          "Intricate joinery and decoration"
+        ]
+      },
+      "construction_techniques_and_materials": {
+        "description": "Dominance of wood (cypress, cedar) and bamboo. Post-and-beam construction. Flexible joinery to withstand earthquakes. Walls made of plaster, wood, or earth. Roofs thatched or tiled (kawara). Paper (washi) for screens and windows. Stone for foundations and castle walls.",
+        "key_features": [
+          "Wood joinery (minimal nails)",
+          "Raised floors for ventilation",
+          "Movable partitions (fusuma, shoji)",
+          "Earthen walls (dobezai)",
+          "Roofing materials: thatch, kawara tiles"
+        ]
+      }
+    },
+    "clothing": {
+      "everyday_clothing": {
+        "description": "The basic garment for all classes and genders was the kimono or kosode, a T-shaped robe tied with a sash (obi). Style, fabric, and decoration varied greatly by status and occasion.",
+        "male_items": [
+          "Kosode (worn underneath or as casual wear)",
+          "Kimono",
+          "Obi (sash)",
+          "Hakama (pleated trousers/skirt, for samurai and formal wear)",
+          "Haori (short jacket, worn over kimono)",
+          "Tabi (split-toe socks)",
+          "Fundoshi (loincloth)"
+        ],
+        "female_items": [
+          "Kosode",
+          "Kimono (often more elaborate than men's)",
+          "Obi (wider and more decorative than men's)",
+          "Juban (undergarment kimono)",
+          "Tabi"
+        ],
+        "materials_colors_decoration": {
+          "materials": [
+            "Silk (upper classes)",
+            "Cotton (increasingly common)",
+            "Hemp",
+            "Linen"
+          ],
+          "colors": [
+            "Indigo (common blue)",
+            "Browns and greys (commoner, samurai restrained)",
+            "Reds and purples (status-related, sumptuary laws)",
+            "Yellows and greens (natural dyes)"
+          ],
+          "decoration": [
+            "Weaving patterns",
+            "Dyeing techniques (tsujigahana, yuzen dyeing later)",
+            "Embroidery",
+            "Family crests (mon)"
+          ]
+        }
+      },
+      "ceremonial_special_occasion": {
+        "description": "More formal kimono styles (e.g., montsuki with family crests), layered robes (historically from court), Samurai armor (for ceremony, less for daily wear in peace), Wedding attire (shiro-muku, uchikake for brides).",
+        "key_features": [
+          "Layering of garments",
+          "Specific patterns or colors for rituals",
+          "Formal obi styles"
+        ]
+      },
+      "status_indicators_in_clothing": {
+        "description": "Class was clearly indicated by fabric quality, color, pattern size and complexity, and items carried (like swords for samurai). Sumptuary laws dictated what different classes could wear.",
+        "indicators": [
+          "Fabric quality (silk vs hemp/cotton)",
+          "Color richness and variety",
+          "Presence and style of family crests (mon)",
+          "Width and material of obi",
+          "Wearing of swords (samurai only)",
+          "Complexity of pattern and dyeing method"
+        ]
+      }
+    },
+    "artifacts": {
+      "weapons_and_armor": {
+        "description": "Samurai weapons primarily swords (katana, wakizashi), yari (spears), and yumi (bows). Firearms (tanegashima) existed but were less central than in the Sengoku period. Armor (yoroi) was used for battle or ceremony.",
+        "items": [
+          "Katana (long sword)",
+          "Wakizashi (short sword)",
+          "Yari (spear)",
+          "Yumi (bow)",
+          "Tanegashima (matchlock rifle)",
+          "Samurai armor (yoroi, kabuto helmet)"
+        ]
+      },
+      "tools_for_work_and_daily_life": {
+        "description": "Varied by occupation. Farming tools (hoes, sickles, plows, spades), carpentry tools (saws, chisels, planes), weaving looms, pottery wheels, fishing nets and poles, kitchen knives, grinding stones, writing brushes and inkstones.",
+        "items": [
+          "Hoes and sickles",
+          "Carpentry saws and chisels",
+          "Weaving looms",
+          "Pottery tools",
+          "Fishing gear",
+          "Kitchen knives",
+          "Writing sets (brush, inkstone, ink stick)"
+        ]
+      },
+      "household_items": {
+        "description": "Items for eating, cooking, sleeping, and daily living. Often made of wood, bamboo, lacquerware, and ceramics.",
+        "items": [
+          "Rice bowls and plates (ceramic, lacquer)",
+          "Chopsticks",
+          "Tea sets (bowls, kettles)",
+          "Futon bedding",
+          "Tansu (chests of drawers)",
+          "Lanterns (andon, chochin)",
+          "Kamon (portable braziers for heating)",
+          "Geta (wooden clogs)",
+          "Zori (sandals)"
+        ]
+      },
+      "transportation_methods": {
+        "description": "Primarily walking. Horses were used by samurai and officials. Palanquins (kago) were used for transporting people, especially wealthy or important figures. Boats and ships were crucial for travel along coasts and rivers, and for goods transport.",
+        "methods": [
+          "Walking",
+          "Kago (palanquin)",
+          "Horses",
+          "Riverboats",
+          "Coastal ships"
+        ]
+      }
+    },
+    "art_motifs": {
+      "major_art_styles": {
+        "description": "Key painting schools included Kanō (official, often large-scale, ink/color), Tosa (classical themes, narrative, bright colors), Rinpa (decorative, nature motifs, gold/silver leaf), and the beginnings of Ukiyo-e (woodblock prints and paintings of 'floating world' - courtesans, actors, daily life).",
+        "styles": [
+          "Kanō School",
+          "Tosa School",
+          "Rinpa School",
+          "Early Ukiyo-e (painting and print)"
+        ]
+      },
+      "common_motifs_and_symbols": {
+        "description": "Nature was a primary source of inspiration, stylized and symbolic. Animals and mythical creatures also featured.",
+        "motifs": [
+          "Cherry blossoms (sakura)",
+          "Pine trees (matsu)",
+          "Bamboo (take)",
+          "Plum blossoms (ume)",
+          "Waves (seigaiha pattern)",
+          "Cranes (tsuru)",
+          "Carp (koi)",
+          "Dragons (ryu)",
+          "Phoenixes (ho-o)",
+          "Scenes from literature or history",
+          "Everyday life (chōnin culture, theatre, pleasure quarters in Ukiyo-e)",
+          "Family crests (mon)",
+          "Geometric patterns"
+        ]
+      },
+      "materials_and_methods_for_artistic_expression": {
+        "description": "Painting on silk or paper (scrolls, screens, fans) using ink (sumi) and mineral pigments. Woodblock printing (mokuhanga) for Ukiyo-e. Lacquering on wood. Ceramics painting. Metalwork.",
+        "materials": [
+          "Silk",
+          "Paper (washi)",
+          "Ink (sumi)",
+          "Mineral pigments",
+          "Woodblocks",
+          "Lacquer",
+          "Ceramics"
+        ],
+        "methods": [
+          "Brush painting (sumi-e, color painting)",
+          "Woodblock printing (mokuhanga)",
+          "Lacquering",
+          "Ceramics painting",
+          "Textile dyeing and embroidery"
+        ]
+      },
+      "culturally_significant_imagery": {
+        "description": "Images carrying deep cultural meaning.",
+        "imagery": [
+          "Mount Fuji",
+          "Samurai and warriors",
+          "Beautiful women (bijin - esp. courtesans in Ukiyo-e)",
+          "Scenes from theatre (Kabuki, Noh)",
+          "Seasonal landscapes and events",
+          "Mythological figures"
+        ]
+      }
+    },
+    "color_palette": {
+      "natural_colors_available": {
+        "description": "Colors derived from plants, minerals, and earth.",
+        "colors": [
+          "Earth tones (browns, greys, yellows)",
+          "Black (soot-based ink)",
+          "White (mineral pigments)",
+          "Indigo (from indigo plant)",
+          "Reds (from madder, safflower)",
+          "Greens (from minerals like malachite)",
+          "Blues (from minerals like azurite)"
+        ]
+      },
+      "dyes_and_pigments_used": {
+        "description": "Techniques for creating dyes and pigments were highly developed.",
+        "dyes": [
+          "Indigo (aizome)",
+          "Madder (akane)",
+          "Safflower (benibana)",
+          "Persimmon tannin (kakishibu - brown/orange)",
+          "Various plant roots, bark, leaves"
+        ],
+        "pigments": [
+          "Sumi ink (soot black)",
+          "Lead white (go fun)",
+          "Cinnabar (shu - vermillion red)",
+          "Malachite (rokusho - green)",
+          "Azurite (gunjo - blue)",
+          "Realgar (shinsha - yellow)",
+          "Gold and silver leaf/powder"
+        ]
+      },
+      "status_related_color_associations": {
+        "description": "Sumptuary laws often regulated colors. Certain colors or combinations were associated with specific ranks or classes.",
+        "associations": [
+          "Purple (murasaki) often associated with high rank or luxury",
+          "Bright colors became popular with the merchant class (sometimes restricted)",
+          "Restrained colors like browns, greys, deep blues/greens for samurai and upper classes (often dictated by subtle taste or sumptuary laws)",
+          "Specific colors for religious garments"
+        ]
+      }
+    }
+  },
+  "cultural_behaviors": {
+    "social_structure": {
+      "social_classes_and_their_roles": {
+        "description": "A rigid four-tier system (Shi-Nō-Kō-Shō): Samurai (warriors, administrators - ruling class), Peasants (farmers - primary producers, largest class), Artisans (craftsmen), Merchants (traders, distributors). Below these were outcasts (eta, hinin).",
+        "classes": [
+          "Shi (Samurai)",
+          "Nō (Peasants)",
+          "Kō (Artisans)",
+          "Shō (Merchants)",
+          "Eta (Outcasts)",
+          "Hinin (Non-humans)"
+        ]
+      },
+      "gender_roles_and_responsibilities": {
+        "description": "Patriarchal society. Men were heads of households and primary public figures. Women managed domestic affairs; their specific roles varied greatly by class. Samurai women maintained household honor, merchant women might participate in business, peasant women worked in fields. Women had limited legal rights.",
+        "roles": [
+          "Men: Household head, provider, public representative, warrior (samurai)",
+          "Women: Household manager, child-rearing, domestic work, assistance in family trade/farm (varying by class)"
+        ]
+      },
+      "family_structure_and_kinship": {
+        "description": "The 'ie' (household) was the fundamental social unit, prioritizing the continuity and prosperity of the household over individuals. Typically multi-generational. Head of household (usually the eldest male) had considerable authority. Inheritance often followed primogeniture.",
+        "structure": [
+          "Ie (household system)",
+          "Patrilineal descent",
+          "Multi-generational living",
+          "Head of household authority",
+          "Arranged marriages common"
+        ]
+      },
+      "leadership_and_power_structures": {
+        "description": "The Shogun (military dictator) ruled through the Bakufu (Shogunate) in Edo. Below the Shogun were the Daimyo (feudal lords) who controlled domains. Samurai served the Shogun or Daimyo, forming the administrative backbone. The Emperor in Kyoto held symbolic authority.",
+        "structures": [
+          "Shogun (Tokugawa)",
+          "Bakufu (Shogunate government)",
+          "Daimyo (Feudal Lords)",
+          "Samurai bureaucracy",
+          "Emperor (symbolic head)"
+        ]
+      }
+    },
+    "daily_life": {
+      "typical_daily_routines": {
+        "description": "Routines varied by class and occupation. Generally, days started early, focused on work (farming, craft, trade, official duties). Meals were communal within the household. Evenings involved simple activities or limited entertainment before an early bedtime.",
+        "routines": [
+          "Early rising",
+          "Work (fields, workshops, offices, shops)",
+          "Communal meals (breakfast, lunch, dinner)",
+          "Household chores",
+          "Evening leisure (storytelling, family time, limited outside entertainment)",
+          "Early bedtime"
+        ]
+      },
+      "food_and_diet": {
+        "description": "Rice was the staple for most, though peasants often ate millet or barley. Diet included vegetables (radishes, greens, beans), fermented foods (miso, soy sauce, pickles), fish (fresh and saltwater), tofu. Meat consumption was rare (Buddhist influence). Tea was a common drink; sake (rice wine) was consumed.",
+        "diet": [
+          "Rice (or other grains like millet/barley)",
+          "Vegetables (daikon, greens, beans)",
+          "Pickles (tsukemono)",
+          "Miso soup",
+          "Tofu",
+          "Fish (grilled, raw - early forms of sushi)",
+          "Seaweed",
+          "Tea",
+          "Sake"
+        ]
+      },
+      "occupations_and_labor": {
+        "description": "The majority were farmers cultivating rice and other crops. Others were artisans (potters, weavers, carpenters, blacksmiths), merchants (shopkeepers, traders), samurai administrators, laborers, fishermen.",
+        "occupations": [
+          "Farming (rice cultivation)",
+          "Artisans (pottery, textiles, metalwork, woodworking)",
+          "Merchants (trading, shopkeeping)",
+          "Samurai (administration, policing)",
+          "Laborers",
+          "Fishermen",
+          "Service workers (innkeepers, bath house workers)"
+        ]
+      },
+      "family_life_and_childrearing": {
+        "description": "Centered around the 'ie' (household). Duty to the family head and household was paramount. Children were raised to understand their social status and future role. Education varied; basic literacy was increasing, especially for samurai and merchants.",
+        "aspects": [
+          "Household (ie) central",
+          "Obedience to head of household",
+          "Arranged marriages",
+          "Emphasis on duty and responsibility",
+          "Education varied by class"
+        ]
+      }
+    },
+    "rituals": {
+      "religious_or_spiritual_practices": {
+        "description": "A mix of Buddhism and Shinto, often practiced alongside each other. Ancestor worship was significant. Visiting temples and shrines for prayer, blessings, and participation in festivals (matsuri). Tea ceremony (Chanoyu) was a formalized spiritual and social ritual.",
+        "practices": [
+          "Buddhism (various sects)",
+          "Shinto",
+          "Ancestor worship",
+          "Visiting temples and shrines",
+          "Participation in Matsuri (festivals)",
+          "Tea ceremony (Chanoyu)"
+        ]
+      },
+      "birth_coming_of_age_marriage_and_death_customs": {
+        "description": "Life cycle events were marked by specific rituals, often combining Buddhist and Shinto elements.",
+        "customs": {
+          "birth": "Naming ceremonies, visiting shrines (e.g., for protection)",
+          "coming_of_age": "Genpuku (boys, around 15, receiving adult name and first samurai dress/haircut if applicable), Mogi (girls, receiving adult kimono and hairstyle)",
+          "marriage": "Formal negotiation between families, exchange of gifts, ceremony (often Shinto or domestic), exchange of sake (san-san-kudo)",
+          "death": "Buddhist funeral rites most common, mourning periods, memorial services at specific intervals (e.g., 49th day, anniversaries), ancestor tablets in household altars (butsudan)"
+        }
+      },
+      "seasonal_celebrations_and_festivals": {
+        "description": "Festivals tied to the agricultural calendar, seasonal changes, and specific deities/events. Often involved processions, music, special foods, and visits to shrines/temples.",
+        "celebrations": [
+          "Oshogatsu (New Year)",
+          "Setsubun (Bean-throwing festival)",
+          "Hina Matsuri (Girls' Day - March 3)",
+          "Tango no Sekku / Kodomo no Hi (Boys' Day - May 5)",
+          "Tanabata (Star Festival - July 7)",
+          "Obon (Ancestor Festival - August)",
+          "Tsukimi (Moon Viewing - Autumn)",
+          "Local Matsuri (shrine festivals, harvest festivals)"
+        ]
+      },
+      "important_ceremonies": {
+        "description": "Official ceremonies related to the Shogunate and court, as well as religious ceremonies.",
+        "ceremonies": [
+          "Sankin-kōtai (Daimyo attendance in Edo)",
+          "Official appointments and audiences at Edo Castle",
+          "Temple and shrine consecrations and rituals",
+          "Formal tea ceremonies"
+        ]
+      }
+    },
+    "entertainment": {
+      "games_and_sports": {
+        "description": "Board games were popular indoor activities. Physical contests existed but were less emphasized than in the warring states period.",
+        "games_sports": [
+          "Go (board game)",
+          "Shogi (Japanese chess)",
+          "Sugoroku (board game)",
+          "Kai-awase (shell matching game)",
+          "Hanetsuki (battledore and shuttlecock)",
+          "Sumo wrestling (popular spectacle)"
+        ]
+      },
+      "music_and_instruments": {
+        "description": "Music was integral to theatre, festivals, and social gatherings. Instruments included strings, wind, and percussion.",
+        "music_instruments": [
+          "Shamisen (3-stringed lute - popular in urban centers, geisha, theatre)",
+          "Koto (zither)",
+          "Shakuhachi (bamboo flute)",
+          "Biwa (lute)",
+          "Taiko drums",
+          "Fue (flute)"
+        ]
+      },
+      "storytelling_traditions": {
+        "description": "Oral traditions were strong, evolving into formalized performance styles.",
+        "traditions": [
+          "Rakugo (comic storytelling)",
+          "Kōdan (recitation of historical tales)",
+          "Recitation of classic literature and folk tales"
+        ]
+      },
+      "other_leisure_activities": {
+        "description": "Various activities for relaxation and enjoyment, particularly flourishing in urban centers.",
+        "activities": [
+          "Theatre (Kabuki, Noh, Bunraku puppet theatre)",
+          "Visiting tea houses",
+          "Attending festivals (matsuri)",
+          "Enjoying gardens",
+          "Poetry composition (Haiku, Renku)",
+          "Visiting public baths",
+          "Exploring pleasure quarters (e.g., Yoshiwara)"
+        ]
+      }
+    },
+    "taboos_and_codes": {
+      "behavioral_expectations": {
+        "description": "Strict adherence to social hierarchy and etiquette (reigi). Politeness, humility, respect for elders and superiors. Group harmony over individual desire. Maintaining composure.",
+        "expectations": [
+          "Respect for hierarchy",
+          "Politeness and etiquette (reigi)",
+          "Group harmony",
+          "Emotional restraint (especially for samurai)",
+          "Punctuality and reliability"
+        ]
+      },
+      "taboos_and_forbidden_activities": {
+        "description": "Actions that disrupted social order or violated moral codes.",
+        "taboos": [
+          "Disloyalty to one's lord or family",
+          "Cowardice (especially for samurai)",
+          "Disturbing the peace",
+          "Unauthorized travel or emigration (due to Sakoku)",
+          "Public displays of certain emotions",
+          "Certain illegal activities (gambling, theft, murder)"
+        ]
+      },
+      "honor_and_shame_concepts": {
+        "description": "Central to the samurai code (Bushido) but influenced all classes. Honor was maintained through fulfilling one's duty, loyalty, and courage. Shame resulted from failure, cowardice, or disrespect. Seppuku (ritual suicide) was a way for samurai to regain lost honor.",
+        "concepts": [
+          "Maintaining personal and family honor",
+          "Duty and loyalty (chu)",
+          "Integrity and sincerity (makoto)",
+          "Courage and self-control",
+          "Shame as a powerful social force",
+          "Seppuku (for samurai to restore honor)"
+        ]
+      },
+      "hospitality_customs": {
+        "description": "Important, especially in rural areas and within formal social contexts like the tea ceremony. Offering tea, refreshments, or meals to guests. Providing shelter to travelers (though inns became more common).",
+        "customs": [
+          "Offering tea and refreshments to guests",
+          "Providing lodging for travelers",
+          "Formal hospitality during tea ceremony"
+        ]
+      }
+    }
+  },
+  "language_cues": {
+    "common_phrases": {},
+    "naming_conventions": {},
+    "language_structure": {},
+    "writing_system": null
+  },
+  "environmental_elements": {
+    "geography": {},
+    "climate": {},
+    "flora_and_fauna": {},
+    "lighting_conditions": {},
+    "soundscape": {}
+  }
+}
